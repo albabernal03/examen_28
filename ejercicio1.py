@@ -57,4 +57,7 @@ def hanoi(n, pivote_inicial,pivote_auxiliar,pivote_final):
         print('Mover disco de', pivote_inicial.name, 'a', pivote_final.name)
         hanoi(n-1,pivote_auxiliar, pivote_inicial, pivote_final)
 
-        
+if __name__== '__main__':
+    hanoi(n,pivote_incial,pivote_auxiliar,pivote_final)
+    print('Fin del juego')
+
