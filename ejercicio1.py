@@ -46,3 +46,5 @@ pivote_incial= Pila("pivote_inicial")
 pivote_auxiliar= Pila("pivote_auxiliar")
 pivote_final= Pila("pivote_final")
 n= int(input("Ingrese la cantidad de discos: "))
+
+def hanoi(n, pivote_inicial,pivote_auxiliar,pivote_final):
