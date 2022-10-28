@@ -48,3 +48,7 @@ pivote_final= Pila("pivote_final")
 n= int(input("Ingrese la cantidad de discos: "))
 
 def hanoi(n, pivote_inicial,pivote_auxiliar,pivote_final):
+    if n==1:
+        apilar(pivote_final, desapilar(pivote_inicial))
+        print('Mover disco de', pivote_inicial.name, 'a', pivote_final.name)
+        
