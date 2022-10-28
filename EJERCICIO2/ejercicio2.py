@@ -10,5 +10,4 @@ def determinante(matriz): #forma recursiva
             det += (-1)**i * matriz[0][i] * determinante([fila[:i] + fila[i+1:] for fila in (matriz[1:])])
         return det
 
-matriz = [[1, 2, 3], [4, 5, 6], [7, 6, 9]]
-print(determinante(matriz))
+
