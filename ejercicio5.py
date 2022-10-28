@@ -12,15 +12,18 @@ from sre_parse import WHITESPACE
 def encriptar():
     texto = input("Ingrese el texto a encriptar: ")
     texto_encriptado = ""
+
     for i in texto:
-        texto_encriptado += hashlib.sha256(i.encode()).hexdigest()[:8]#[:8] es para que tome los primeros 8 caracteres
+        texto_encriptado += hashlib.sha256(i.encode('ASCII')).hexdigest()[:8]#[:8] es para que tome los primeros 8 caracteres
 
     with open("encriptado.txt", "w") as file:
         file.write(texto_encriptado)
         print("El texto encriptado se guardo en el archivo encriptado.txt")
 
+#TODO: QUEDA DESENCRIPTAR
     
-if __name__ == "__main__":
-    encriptar()
+
+
+
    
 

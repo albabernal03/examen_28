@@ -138,3 +138,5 @@ def existir_termino(polinomio,termino):
         return True
     else:
         return False
+
+
