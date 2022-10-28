@@ -39,3 +39,10 @@ def en_cima(pila):
 def tamanio_pila(pila):
     '''Devuelve el tamanio de la pila'''
     return pila.tamanio
+
+#RESOLVEMOS EL EJERCICO (HANOI):
+
+pivote_incial= Pila("pivote_inicial")
+pivote_auxiliar= Pila("pivote_auxiliar")
+pivote_final= Pila("pivote_final")
+n= int(input("Ingrese la cantidad de discos: "))
