@@ -129,4 +129,12 @@ def dividir(polinomio1,polinomio2):
         pol1= pol1.sig
     return paux
 
-                
+#FUNCION AÑADIDA
+def existir_termino(polinomio,termino):
+    aux= polinomio.termino_mayor
+    while aux is not None and aux.info.termino > termino:
+        aux= aux.sig
+    if aux is not None and aux.info.termino == termino:
+        return True
+    else:
+        return False
