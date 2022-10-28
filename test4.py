@@ -1,7 +1,7 @@
 #hacemos el test del fichero ejercicio4.py
 
 import unittest
-from ejercicio4 import *
+from EJERCICIO3.EJERCICIO4.ejercicio4 import *
 
 class TestEjercicio4(unittest.TestCase):
     def test_agregar_termino(self):
