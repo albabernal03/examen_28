@@ -51,4 +51,10 @@ def hanoi(n, pivote_inicial,pivote_auxiliar,pivote_final):
     if n==1:
         apilar(pivote_final, desapilar(pivote_inicial))
         print('Mover disco de', pivote_inicial.name, 'a', pivote_final.name)
+    else:
+        hanoi(n-1,pivote_inicial, pivote_final, pivote_auxiliar)
+        apilar(pivote_final, desapilar(pivote_inicial))
+        print('Mover disco de', pivote_inicial.name, 'a', pivote_final.name)
+        hanoi(n-1,pivote_auxiliar, pivote_inicial, pivote_final)
+
         
