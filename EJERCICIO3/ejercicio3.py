@@ -55,8 +55,6 @@ def naves_mayor_tripulacion(lista):
             if nave.tripulacion > mayor.tripulacion:
                 mayor= nave
         print(mayor.nombre, mayor.largo, mayor.tripulacion, mayor.pasajeros)
-        lista.remove(mayor)
-        mayor= lista[0]
 
 def naves_empiezan_AT(lista):
     for nave in lista:
