@@ -44,8 +44,7 @@ def naves_mayor_pasajeros(lista):
             if nave.pasajeros > mayor.pasajeros:
                 mayor= nave
         print(mayor.nombre, mayor.largo, mayor.tripulacion, mayor.pasajeros)
-        lista.remove(mayor)
-        mayor= lista[0]
+
 
 
 def naves_mayor_tripulacion(lista):
