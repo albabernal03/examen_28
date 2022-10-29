@@ -24,7 +24,7 @@ def encriptar():
 def desencriptar():
     resolver= open("encriptado.txt", "r", encoding='ASCII')
     for x in resolver:
-        print(x)
+        print('El mensaje desencriptado es:',x)
     resolver.close()
 
     
