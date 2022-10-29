@@ -47,4 +47,3 @@ def iniciar():
     ordenar__naves_por_nombre_descendente(lista)
     mostrar_nave(lista)
 
-main()
