@@ -20,7 +20,12 @@ def encriptar():
         file.write(texto_encriptado)
         print("El texto encriptado se guardo en el archivo encriptado.txt")
 
-#TODO: QUEDA DESENCRIPTAR
+def desencriptar():
+    resolver= open("encriptado.txt", "r", encoding='ASCII')
+    for x in resolver:
+        print(x)
+    resolver.close()
+
     
 
 

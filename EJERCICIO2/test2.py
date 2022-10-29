@@ -8,7 +8,13 @@ class TestEjercicio2(unittest.TestCase):
     matriz3 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     matriz4 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
-    assert determinante(matriz1) == 0
-    assert determinante(matriz2) == 0
-    assert determinante(matriz3) == 0
-    assert determinante(matriz4) == 0
+    assert determinante_recursivo(matriz1) == 0
+    assert determinante_recursivo(matriz2) == 0
+    assert determinante_recursivo(matriz3) == 0
+    assert determinante_recursivo(matriz4) == 0
+
+    assert determinante_iterativo(matriz1) == 0
+    assert determinante_iterativo(matriz2) == 0
+    assert determinante_iterativo(matriz3) == 0
+    assert determinante_iterativo(matriz4) == 0
+    
