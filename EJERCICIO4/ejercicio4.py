@@ -140,3 +140,36 @@ def existir_termino(polinomio,termino):
         return False
 
 
+def menu():
+    print('1. Agregar termino')
+    print('2. Eliminar termino')
+    print('3. Modificar termino')
+    print('4. Obtener valor de un termino')
+    print('5. Mostrar polinomio')
+    print('6. Sumar polinomios')
+    print('7. Restar polinomios')
+    print('8. Multiplicar polinomios')
+    print('9. Dividir polinomios')
+    print('10. Salir')
+
+    opcion= int(input('Ingrese una opcion: '))
+    polinomio= Polinomio()
+
+    if opcion == 1:
+        termino= int(input('Ingrese el termino: '))
+        valor= int(input('Ingrese el valor: '))
+        agregar_termino(polinomio,termino,valor)
+
+    elif opcion == 2:
+        termino= int(input('Ingrese el termino: '))
+        eliminar_termino(polinomio,termino)
+
+    elif opcion == 3:
+        termino= int(input('Ingrese el termino: '))
+        valor= int(input('Ingrese el valor: '))
+        modificar_termino(polinomio,termino,valor)
+
+    elif opcion == 4:
+
+
+
