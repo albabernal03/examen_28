@@ -170,6 +170,36 @@ def menu():
         modificar_termino(polinomio,termino,valor)
 
     elif opcion == 4:
+        termino= int(input('Ingrese el termino: '))
+        print(obtener_valor(polinomio,termino))
+
+    elif opcion == 5:
+        print(mostrar_polinomio(polinomio))
+        
+    elif opcion == 6:
+        polinomio2= Polinomio()
+        polinomio3= sumar(polinomio,polinomio2)
+        print(mostrar_polinomio(polinomio3))
+
+    elif opcion == 7:
+        polinomio2= Polinomio()
+        polinomio3= restar(polinomio,polinomio2)
+        print(mostrar_polinomio(polinomio3))
+
+    elif opcion == 8:
+        polinomio2= Polinomio()
+        polinomio3= multiplicar(polinomio,polinomio2)
+        print(mostrar_polinomio(polinomio3))
+    
+    elif opcion == 9:
+        polinomio2= Polinomio()
+        polinomio3= dividir(polinomio,polinomio2)
+        print(mostrar_polinomio(polinomio3))
+
+    elif opcion == 10:
+        return
+
+
         
 
 
