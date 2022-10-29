@@ -51,7 +51,7 @@ def naves_mayor_pasajeros(lista):
 
 
 def naves_mayor_tripulacion(lista):
-    mayor= lista[0]
+    mayor= lista[]
     for i in range(5):
         for nave in lista:
             if nave.tripulacion > mayor.tripulacion:
@@ -112,7 +112,7 @@ def main():
     naves_empiezan_AT(lista)
 
     #determinar cuáles son las naves que tienen más de seis pasajeros
-    print("Las naves que tienen mas de seis pasajeros son:")
+    print("Las naves que tienen mas de seis pasajeros o 6 pasajeros son:")
     naves_mas_de_seis_pasajeros(lista)
 
     #determinar cuál es la nave más pequeña
