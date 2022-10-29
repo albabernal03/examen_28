@@ -48,13 +48,13 @@ def naves_mayor_pasajeros(lista):
 
 
 def naves_mayor_tripulacion(lista):
-    mayor= lista[0]
-    for i in range(5):
-        for nave in lista:
+    for nave in lista:
+        for nave in range (5):
             if nave.tripulacion > mayor.tripulacion:
                 mayor= nave
         print(mayor.nombre, mayor.largo, mayor.tripulacion, mayor.pasajeros)
 
+        
 def naves_empiezan_AT(lista):
     for nave in lista:
         if nave.nombre[0] == "A" or nave.nombre[0] == "T":
