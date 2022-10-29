@@ -20,6 +20,7 @@ def crear_naves():
     return naves
 
 def ordenar__naves_por_nombre_ascedente(lista): # hemos aplicado el metodo de ordenamiento por seleccion
+    print('Las naves ordenadas por nombre de forma ascendente son:')
     for i in range(len(lista)):
         for j in range(i+1, len(lista)):
             if lista[i].nombre > lista[j].nombre:
@@ -27,10 +28,12 @@ def ordenar__naves_por_nombre_ascedente(lista): # hemos aplicado el metodo de or
 
 
 def ordenar__naves_por_nombre_descendente(lista): # hemos aplicado el metodo de ordenamiento por seleccion
+    print('Las naves ordenadas por nombre de forma descendente son:')
     for i in range(len(lista)):
         for j in range(i+1, len(lista)):
             if lista[i].nombre < lista[j].nombre:
                 lista[i], lista[j] = lista[j], lista[i]
+
 
 def mostrar_nave(lista):
     for nave in lista:
@@ -53,34 +56,34 @@ def naves_mayor_tripulacion(lista):
         for nave in lista:
             if nave.tripulacion > mayor.tripulacion:
                 mayor= nave
-        print(mayor.nombre, mayor.largo, mayor.tripulacion, mayor.pasajeros)
+        print(mayor.nombre, mayor.tripulacion)
 
 
 def naves_empiezan_AT(lista):
     for nave in lista:
         if nave.nombre[0] == "A" or nave.nombre[0] == "T":
-            print(nave.nombre, nave.largo, nave.tripulacion, nave.pasajeros)
+            print(nave.nombre)
 
 
 def naves_mas_de_seis_pasajeros(lista):
     for nave in lista:
         if nave.pasajeros >= 6:
-            print(nave.nombre, nave.largo, nave.tripulacion, nave.pasajeros)
+            print(nave.nombre,nave.pasajeros)
+
 
 def nave_mas_pequena(lista):
     menor= lista[0]
     for nave in lista:
         if nave.largo < menor.largo:
             menor= nave
-    print(menor.nombre, menor.largo, menor.tripulacion, menor.pasajeros)
+    print(menor.nombre, menor.largo)
 
 def nave_mas_grande(lista):
     mayor= lista[0]
     for nave in lista:
         if nave.largo > mayor.largo:
             mayor= nave
-    print(mayor.nombre, mayor.largo, mayor.tripulacion, mayor.pasajeros)
-
+    print(mayor.nombre, mayor.largo)
 
 
 
