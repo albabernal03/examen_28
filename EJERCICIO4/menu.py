@@ -1,7 +1,7 @@
 from ejercicio4 import *
 
 
-def menu():
+def iniciar():
     print('1. Agregar termino')
     print('2. Eliminar termino')
     print('3. Modificar termino')
