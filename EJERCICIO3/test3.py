@@ -12,7 +12,7 @@ class TestEjercicio3(unittest.TestCase):
                     Nave("Defiant", 400, 7, 150),
                     Nave("Reliant", 500, 9, 200),
                     Nave("Intrepid", 100, 1, 10)]
-            Nave.ordenar_naves_por_nombre_ascendente(lista)
+            self.ordenar_naves_por_nombre_ascendente(lista)
             self.assertEqual(lista[0].nombre, "Defiant")
             self.assertEqual(lista[1].nombre, "Enterprise")
             self.assertEqual(lista[2].nombre, "Intrepid")
@@ -25,7 +25,7 @@ class TestEjercicio3(unittest.TestCase):
                     Nave("Defiant", 400, 7, 150),
                     Nave("Reliant", 500, 9, 200),
                     Nave("Intrepid", 100, 1, 10)]
-            Nave.ordenar_naves_por_nombre_descendente(lista)
+            self.ordenar_naves_por_nombre_descendente(lista)
             self.assertEqual(lista[0].nombre, "Voyager")
             self.assertEqual(lista[1].nombre, "Reliant")
             self.assertEqual(lista[2].nombre, "Intrepid")
