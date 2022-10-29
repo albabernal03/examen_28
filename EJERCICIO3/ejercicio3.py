@@ -51,7 +51,7 @@ def naves_mayor_pasajeros(lista):
 
 
 def naves_mayor_tripulacion(lista):
-    mayor= lista[]
+    mayor= lista[0]
     for i in range(5):
         for nave in lista:
             if nave.tripulacion > mayor.tripulacion:
