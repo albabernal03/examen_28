@@ -1,6 +1,6 @@
 from ejercicio5 import *
 
-def menu():
+def iniciar():
     print("1. Encriptar")
     print("2. Desencriptar")
     print("3. Salir")
@@ -13,8 +13,6 @@ def menu():
         print("Hasta luego")
     else:
         print("Opcion incorrecta")
-        menu()
 
-if __name__ == '__main__':
-    menu()
+
     
