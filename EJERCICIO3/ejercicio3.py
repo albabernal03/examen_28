@@ -46,7 +46,7 @@ def naves_mayor_pasajeros(lista):
         for nave in lista:
             if nave.pasajeros > mayor.pasajeros:
                 mayor= nave
-        print(mayor.nombre, mayor.largo, mayor.tripulacion, mayor.pasajeros)
+        print(mayor.nombre, mayor.pasajeros)
 
 
 
