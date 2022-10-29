@@ -19,6 +19,7 @@ def encriptar():
     with open("encriptado.txt", "w") as file:
         file.write(texto_encriptado)
         print("El texto encriptado se guardo en el archivo encriptado.txt")
+        print(texto_encriptado)
 
 def desencriptar():
     resolver= open("encriptado.txt", "r", encoding='ASCII')
