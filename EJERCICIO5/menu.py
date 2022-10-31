@@ -8,11 +8,11 @@ def iniciar():
 
     if opcion==1:
         mensaje= input('Ingrese el mensaje: ')
-        print('Mensaje cifrado: ',cifrar(mensaje,clave))
+        print('Mensaje cifrado: ',cifrar(mensaje))
 
     elif opcion==2:
         mensaje= input('Ingrese el mensaje: ')
-        print('Mensaje descifrado: ',descifrar(mensaje,clave))
+        print('Mensaje descifrado: ',descifrar(mensaje))
 
 
 
