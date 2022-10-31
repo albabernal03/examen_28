@@ -8,16 +8,30 @@ def iniciar():
     opcion= int(input("Ingrese una opcion: "))
 
     if opcion==1:
-        dimension= definir_dimension_matriz()
-        matriz= crear_matriz(dimension)
-        mostrar_matriz(matriz)
-        print("Determinante: ",determinante_recursivo(matriz))
+            dimension= definir_dimension_matriz()
+            matriz= crear_matriz_vacia(dimension)
+            matriz= cargar_matriz(matriz)
+            mostrar_matriz(matriz)
+            calcular_determinante_recursivo(matriz)
+
     elif opcion==2:
-        dimension= definir_dimension_matriz()
-        matriz= crear_matriz(dimension)
-        mostrar_matriz(matriz)
-        print("Determinante: ",determinante_iterativo(matriz))
-    elif opcion==3:
-        print("Hasta luego")
+            dimension= definir_dimension_matriz()
+            matriz= crear_matriz_vacia(dimension)
+            matriz= cargar_matriz(matriz)
+            mostrar_matriz(matriz)
+            calcular_determinante_iterativo(matriz)
+
+    elif opcion==3: 
+            print("Hasta luego")
+            exit()
+
+    else:
+            print("Opcion incorrecta")
+        
+
+
+
+
+
 
 
