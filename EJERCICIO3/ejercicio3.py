@@ -10,11 +10,11 @@ class Nave:
 
 def crear_naves():
     naves= []
-    naves.append(Nave("Millenium Falcon", 34.37, 4, 6))
-    naves.append(Nave("Executor", 19000, 40000, 38000))
-    naves.append(Nave("Death Star", 120000, 342953, 1000000))
-    naves.append(Nave("Slave 1", 21.5, 1, 6))
-    naves.append(Nave("Imperial shuttle", 20, 6, 20))
+    naves.append(Nave("Halcon Milenario", 34.37, 4, 6))
+    naves.append(Nave("Ejecutor", 19000, 40000, 38000)) 
+    naves.append(Nave("Estrella de la Muerte", 120000, 342953, 1000000))
+    naves.append(Nave("Esclavo 1", 21.5, 1, 6)) 
+    naves.append(Nave("Nave imperial", 20, 6, 20)) 
     
 
     return naves
@@ -45,7 +45,7 @@ def naves_mayor_pasajeros(lista):
     for nave in lista:
         if nave.pasajeros > mayor.pasajeros:
             mayor= nave
-    print(mayor.nombre, mayor.pasajeros)
+    print('La nave {} tine un total de {} pasajeros'. format(mayor.nombre, mayor.pasajeros))
 
 
 
