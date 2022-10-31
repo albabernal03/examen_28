@@ -18,3 +18,8 @@ class TestEjercicio2(unittest.TestCase):
     assert determinante_iterativo(matriz3) == 0
     assert determinante_iterativo(matriz4) == 0
     
+
+if __name__ == '__main__':
+    unittest.main()
+
+    
