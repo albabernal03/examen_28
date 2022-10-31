@@ -65,6 +65,6 @@ def iniciar():
         agregar_termino(p1,1,2)
         agregar_termino(p1,0,1)
         print('Polinomio 1: ',mostrar_polinomio(p1))
-        print('Existe el termino: ',existe_termino(p1,2))
+        print('Existe el termino: ',existir_termino(p1,2))
 
  
