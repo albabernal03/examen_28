@@ -54,22 +54,5 @@ def determinante_iterativo(matriz): # es de forma iterativa ya que no se llama a
     return det
 
 
-def main():
-    dimension= definir_dimension_matriz()
-    matriz= crear_matriz_vacia(dimension)
-    matriz= cargar_matriz(matriz)
-    mostrar_matriz(matriz)
-    calcular_determinante_iterativo(matriz)
-    calcular_determinante_recursivo(matriz)
-
-
-if __name__ == '__main__':
-    main()
-
-
-
-
-
-#forma recursiva
 
 
