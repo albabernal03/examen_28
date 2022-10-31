@@ -1,5 +1,5 @@
 import hashlib
-
+from hashlib import sha256
 #La alianza rebelde necesita comunicarse de manera segura pero el imperio galáctico interviene todas las comunicaciones, por lo que la princesa Leia nos encarga el desarrollo de un algoritmo de encriptación para las comunicaciones rebeldes, que contemple los siguientes requerimientos:
 #cada carácter deberá ser encriptado a ocho caracteres;
 
@@ -9,26 +9,31 @@ import hashlib
 
 
 
-def encriptar():
-    texto = input("Ingrese el texto a encriptar: ")
-    texto_encriptado = ""
+def encriptar(texto):
 
-    for i in texto:
-        texto_encriptado += hashlib.sha256(i.encode('ASCII')).hexdigest()[:8]#[:8] es para que tome los primeros 8 caracteres
-
+    texto= sha256(texto.encode('utf-8')).hexdigest()[:8]
     with open("encriptado.txt", "w") as file:
-        file.write(texto_encriptado)
+        file.write(texto)
         print("El texto encriptado se guardo en el archivo encriptado.txt")
-        print(texto_encriptado)
+        print(texto)
 
-def desencriptar():
-    resolver= open("encriptado.txt", "r", encoding='ASCII')
+def desencriptar(texto):
+    resolver= texto
     for x in resolver:
-        print('El mensaje desencriptado es:',x)
-    resolver.close()
+        r= resolver.encode('utf-8')
+        a= sha256(r).hexdigest()[:8]
 
-    
-
+        if a in resolver:
+            with open("desencriptado.txt", "w") as file:
+                file.write(resolver)
+                print("El texto desencriptado se guardo en el archivo desencriptado.txt")
+                print(resolver)
+                break
+        else:
+            print("No se encontro el texto")
+            
+       
+texto = input("Ingrese el texto a encriptar: ")
 
 
    
