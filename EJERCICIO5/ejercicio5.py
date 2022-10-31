@@ -31,9 +31,9 @@ def desencriptar(texto):
                 break
         else:
             print("No se encontro el texto")
-            
-       
+
 texto = input("Ingrese el texto a encriptar: ")
+
 
 
    
