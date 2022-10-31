@@ -45,7 +45,7 @@ def naves_mayor_pasajeros(lista):
     for nave in lista:
         if nave.pasajeros > mayor.pasajeros:
             mayor= nave
-    print('La nave {} tine un total de {} pasajeros'. format(mayor.nombre, mayor.pasajeros))
+    print(mayor.nombre, mayor.pasajeros)
 
 
 
