@@ -18,10 +18,7 @@ def iniciar():
 
 
     if opcion == 1:
-        termino= int(input('Ingrese el termino: '))
-        valor= int(input('Ingrese el valor: '))
-        x= agregar_termino(polinomio,termino,valor)
-        print('Termino agregado', x)
+        
 
 
     elif opcion==6:
