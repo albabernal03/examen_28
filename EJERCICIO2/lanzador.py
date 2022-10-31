@@ -1,5 +1,4 @@
-import menu
+import iniciador
 
-if __name__ == "__main__":
-    menu.iniciar()
-    
+if __name__ == '__main__':
+    iniciador.main()
