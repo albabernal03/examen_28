@@ -1,19 +1,15 @@
 from ejercicio5 import *
 
+from ejercicio5 import *
 def iniciar():
-    print('1.Encriptar mensaje')
-    print('2.Desencriptar mensaje')
-
-    opcion= int(input('Ingrese una opcion: '))
-    alfabeto= [(i) for i in range(33,125)]
+    alfabeto= [chr(i) for i in range(33,125)]
     Hash= TablaHash(len(alfabeto))
-    mensaje= input('Ingrese el mensaje: ')
+    mensaje= input('Ingrese el mensaje a encriptar: ')
+    mensaje_encriptado= Hash.encriptar(mensaje)
+    print('El mensaje encriptado es: ', mensaje_encriptado)
+    mensaje_desencriptado= Hash.desencriptar(mensaje_encriptado)
+    print('El mensaje desencriptado es: ', mensaje_desencriptado)
 
-    if opcion==1:
-        mensaje_encriptado= Hash.encriptar(mensaje)
-        print('Mensaje encriptado: ',mensaje_encriptado)
+    
 
-    elif opcion==2:
-        mensaje_desencriptado= Hash.desencriptar(mensaje)
-        print('Mensaje desencriptado: ',mensaje_desencriptado)
 
