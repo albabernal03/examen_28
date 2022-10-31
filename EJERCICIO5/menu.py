@@ -7,12 +7,12 @@ def iniciar():
     opcion= int(input('Ingrese una opcion: '))
 
     if opcion==1:
-        mensaje= input('Ingrese el mensaje: ')
-        print('Mensaje cifrado: ',cifrar(mensaje))
+        mensaje= input('Ingrese el mensaje: ').upper()
+        print('Mensaje cifrado: ',encriptar(mensaje))
 
     elif opcion==2:
-        mensaje= input('Ingrese el mensaje: ')
-        print('Mensaje descifrado: ',descifrar(mensaje))
+        mensaje= input('Ingrese el mensaje: ').upper()
+        print('Mensaje descifrado: ',desencriptar(mensaje))
 
 
 
