@@ -17,11 +17,9 @@ def iniciar():
     polinomio= Polinomio()
 
 
-    if opcion == 1:
-        
 
 
-    elif opcion==6:
+    if opcion==6:
         p1= Polinomio()
         p2= Polinomio()
 
