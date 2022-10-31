@@ -6,9 +6,11 @@ def iniciar():
     print("3. Salir")
     opcion = int(input("Ingrese una opcion: "))
     if opcion == 1:
+        texto = input("Ingrese el texto a encriptar: ")
         encriptar(texto)
     elif opcion == 2:
-        desencriptar(texto)
+        texto_encriptado = input("Ingrese el texto a desencriptar: ")
+        desencriptar(texto_encriptado)
     elif opcion == 3:
         print("Hasta luego")
     else:
