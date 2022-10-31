@@ -1,4 +1,4 @@
-<h1 align="center">Gestor de clientes</h1>
+<h1 align="center">Examen 28</h1>
 
 <h2>Repositorio:</h2>
 
