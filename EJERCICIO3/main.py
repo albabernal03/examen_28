@@ -13,11 +13,11 @@ def iniciar():
     print(lista[2].nombre, lista[2].largo, lista[2].tripulacion, lista[2].pasajeros)
 
     #determinar cuáles son las cinco naves con mayor cantidad de pasajeros
-    print("Las cinco naves con mayor cantidad de pasajeros son:")
+    print("Las cinco nave con mayor cantidad de pasajeros es")
     naves_mayor_pasajeros(lista)
 
     #determinar cuáles son las cinco naves con mayor cantidad de tripulación
-    print("Las cinco naves con mayor cantidad de tripulacion son:")
+    print("Las cinco nave con mayor cantidad de tripulacion es:")
     naves_mayor_tripulacion(lista)
 
     #determinar cuáles son las naves que empiezan con la letra A o T

@@ -45,16 +45,17 @@ def naves_mayor_pasajeros(lista):
     for nave in lista:
         if nave.pasajeros > mayor.pasajeros:
             mayor= nave
-    print('La nave con mayor numero de pasejeros',mayor.nombre, mayor.pasajeros)
+    print(mayor.nombre, mayor.pasajeros)
 
 
 
 def naves_mayor_tripulacion(lista):
     mayor= lista[0]
+
     for nave in lista:
         if nave.tripulacion > mayor.tripulacion:
             mayor= nave
-    print('La nave con mayor numero de tripulacion', nombre, mayor.tripulacion)
+    print(mayor.nombre, mayor.tripulacion)
 
 
 def naves_empiezan_AT(lista):
