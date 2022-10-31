@@ -39,3 +39,7 @@ class TestEjercicio3(unittest.TestCase):
                     Nave("Reliant", 500, 9, 200),
                     Nave("Intrepid", 100, 1, 10)]
             self.assertEqual(mostrar_nave(lista), "Enterprise 300 5 100 Voyager 200 3 50 Defiant 400 7 150 Reliant 500 9 200 Intrepid 100 1 10")
+
+
+if __name__ == '__main__':
+    unittest.main()
