@@ -10,6 +10,7 @@ from hashlib import sha256
 
 
 def encriptar(texto, texto_encriptado):
+    texto = input("Ingrese el texto a encriptar: ")
 
     texto_encriptado=  sha256(texto.encode('utf-8')).hexdigest()[:8]
     with open("encriptado.txt", "w") as file:
@@ -32,7 +33,6 @@ def desencriptar(texto_encriptado):
         else:
             print("No se encontro el texto")
 
-texto = input("Ingrese el texto a encriptar: ")
 
 
 
