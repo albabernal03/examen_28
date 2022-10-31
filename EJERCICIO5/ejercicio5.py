@@ -1,5 +1,5 @@
 import hashlib
-from sre_parse import WHITESPACE
+
 #La alianza rebelde necesita comunicarse de manera segura pero el imperio galáctico interviene todas las comunicaciones, por lo que la princesa Leia nos encarga el desarrollo de un algoritmo de encriptación para las comunicaciones rebeldes, que contemple los siguientes requerimientos:
 #cada carácter deberá ser encriptado a ocho caracteres;
 
