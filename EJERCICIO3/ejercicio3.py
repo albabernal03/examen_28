@@ -15,8 +15,6 @@ def crear_naves():
     naves.append(Nave("Estrella de la Muerte", 120000, 342953, 1000000))
     naves.append(Nave("Esclavo 1", 21.5, 1, 6)) 
     naves.append(Nave("Nave imperial", 20, 6, 20)) 
-    
-
     return naves
 
 def ordenar__naves_por_nombre_ascedente(lista): # hemos aplicado el metodo de ordenamiento por seleccion
