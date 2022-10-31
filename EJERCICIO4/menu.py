@@ -16,52 +16,103 @@ def iniciar():
     opcion= int(input('Ingrese una opcion: '))
     polinomio= Polinomio()
 
-    if opcion == 1:
-        termino= int(input('Ingrese el termino: '))
-        valor= int(input('Ingrese el valor: '))
-        agregar_termino(polinomio,termino,valor)
 
-    elif opcion == 2:
-        termino= int(input('Ingrese el termino: '))
-        eliminar_termino(polinomio,termino)
+    if opcion==1:
 
-    elif opcion == 3:
-        termino= int(input('Ingrese el termino: '))
-        valor= int(input('Ingrese el valor: '))
-        modificar_termino(polinomio,termino,valor)
+    elif opcion==2:
 
-    elif opcion == 4:
-        termino= int(input('Ingrese el termino: '))
-        print(obtener_valor(polinomio,termino))
+    elif opcion==3:
 
-    elif opcion == 5:
-        print(mostrar_polinomio(polinomio))
+    elif opcion==4:
+
+    elif opcion==5:
+
+    elif opcion==6:
+        p1= Polinomio()
+        p2= Polinomio()
+
+        agregar_termino(p1,2,3)
+        agregar_termino(p1,1,2)
+        agregar_termino(p1,0,1)
+
+        agregar_termino(p2,3,1)
+        agregar_termino(p2,1,2)
+        agregar_termino(p2,0,3)
+
+        print('Polinomio 1: ',mostrar_polinomio(p1))
+        print('Polinomio 2: ',mostrar_polinomio(p2))
+
+        p3= sumar(p1,p2)
+
+        print('Suma: ',mostrar_polinomio(p3))
+
+    elif opcion==7:
+        p1= Polinomio()
+        p2= Polinomio()
+
+        agregar_termino(p1,2,3)
+        agregar_termino(p1,1,2)
+        agregar_termino(p1,0,1)
+
+        agregar_termino(p2,3,1)
+        agregar_termino(p2,1,2)
+        agregar_termino(p2,0,3)
+
+        print('Polinomio 1: ',mostrar_polinomio(p1))
+        print('Polinomio 2: ',mostrar_polinomio(p2))
+
+        p3= restar(p1,p2)
+
+        print('Resta: ',mostrar_polinomio(p3))
+
+
+    elif opcion==8:
         
-    elif opcion == 6:
-        polinomio2= Polinomio()
-        polinomio3= sumar(polinomio,polinomio2)
-        print(mostrar_polinomio(polinomio3))
+        p1= Polinomio()
+        p2= Polinomio()
 
-    elif opcion == 7:
-        polinomio2= Polinomio()
-        polinomio3= restar(polinomio,polinomio2)
-        print(mostrar_polinomio(polinomio3))
+        agregar_termino(p1,2,3)
+        agregar_termino(p1,1,2)
+        agregar_termino(p1,0,1)
 
-    elif opcion == 8:
-        polinomio2= Polinomio()
-        polinomio3= multiplicar(polinomio,polinomio2)
-        print(mostrar_polinomio(polinomio3))
-    
-    elif opcion == 9:
-        polinomio2= Polinomio()
-        polinomio3= dividir(polinomio,polinomio2)
-        print(mostrar_polinomio(polinomio3))
+        agregar_termino(p2,3,1)
+        agregar_termino(p2,1,2)
+        agregar_termino(p2,0,3)
 
-    elif opcion == 10:
-        return
+        print('Polinomio 1: ',mostrar_polinomio(p1))
+        print('Polinomio 2: ',mostrar_polinomio(p2))
+
+        p3= multiplicar(p1,p2)
+
+        print('Multiplicacion: ',mostrar_polinomio(p3))
+
+    elif opcion==9:
+        p1= Polinomio()
+        p2= Polinomio()
+
+        agregar_termino(p1,2,3)
+        agregar_termino(p1,1,2)
+        agregar_termino(p1,0,1)
+
+        agregar_termino(p2,3,1)
+        agregar_termino(p2,1,2)
+        agregar_termino(p2,0,3)
+
+        print('Polinomio 1: ',mostrar_polinomio(p1))
+        print('Polinomio 2: ',mostrar_polinomio(p2))
+
+        p3= dividir(p1,p2)
+
+        print('Division: ',mostrar_polinomio(p3))
 
 
-        
+    elif opcion==10:
+        print('Hasta luego!')
+        exit()
 
+    else:
+        print('Opcion invalida')
 
+    iniciar()
 
+ 
